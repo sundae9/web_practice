@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            Main page
+        </title>
+    </head>
+    <body>
+        <h1>Main page</h1>
+        <?php
+            if($_SESSION['id']){
+                echo "$_SESSION['id']";
+            }
+        ?>
+        <a href="login.html">LOG IN</a>
+        <a href="logout.php">LOG OUT</a>
+        <a href="sign_up.html">SIGN UP</a>
+        <a href="write.html">WRITE</a>
+        <a href="read.php">READ</a>
+    </body>
+</html>
